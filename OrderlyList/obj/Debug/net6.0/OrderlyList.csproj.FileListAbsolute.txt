@@ -1,0 +1,15 @@
+C:\code\OrderlyList\OrderlyList\bin\Debug\net6.0\OrderlyList.exe
+C:\code\OrderlyList\OrderlyList\bin\Debug\net6.0\OrderlyList.deps.json
+C:\code\OrderlyList\OrderlyList\bin\Debug\net6.0\OrderlyList.runtimeconfig.json
+C:\code\OrderlyList\OrderlyList\bin\Debug\net6.0\OrderlyList.dll
+C:\code\OrderlyList\OrderlyList\bin\Debug\net6.0\OrderlyList.pdb
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.csproj.AssemblyReference.cache
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.AssemblyInfoInputs.cache
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.AssemblyInfo.cs
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.csproj.CoreCompileInputs.cache
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.dll
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\refint\OrderlyList.dll
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.pdb
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\OrderlyList.genruntimeconfig.cache
+C:\code\OrderlyList\OrderlyList\obj\Debug\net6.0\ref\OrderlyList.dll
