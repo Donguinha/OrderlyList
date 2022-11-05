@@ -8,7 +8,7 @@ namespace OrderlyList {
     class Program {
 
         static void Main(string[] args) {
-
+           
             List<Employee> employees = ReceberDados();
             var employeesorder = Ordenar(employees);
             Printar(employeesorder);
@@ -17,28 +17,28 @@ namespace OrderlyList {
         static List<Employee> ReceberDados() {
 
             Console.Write("how many employees does the company have: ");
-            int Quantity = int.Parse(Console.ReadLine());
+            int quantosemp = int.Parse(Console.ReadLine());
 
-            var list = new List<Employee>();
+            var listarecebe = new List<Employee>();
 
-            for (int i = 0; i < Quantity; i++) {
+            for (int i = 0; i < quantosemp; i++) {
                 Console.Write("-----------------------------\n#{0}-Employee ID: ", (i + 1));
-                int IdReceived = int.Parse(Console.ReadLine());
+                int idfuncionario = int.Parse(Console.ReadLine());
 
                 Console.Write("#{0}-Employee name: ", (i + 1));
-                string NameReceived = Console.ReadLine();
+                string nomefuncionario = Console.ReadLine();
 
-                list.Add(new Employee(IdReceived, NameReceived));
+                listarecebe.Add(new Employee(idfuncionario, nomefuncionario));
             }
 
-            return list;
+            return listarecebe;
         }
 
-        static List<Employee> Ordenar(List<Employee> employees) {
+        static List<Employee> Ordenar(List<Employee> employe) {
 
-            var ordenados = new int[employees.Count];
+            var ordenados = new int[employe.Count];
 
-            foreach (Employee cada in employees) {
+            foreach (Employee cada in employe) {
                 for (int i = 0; i < ordenados.Length; i++) {
                     if (cada.Id < ordenados[i] || ordenados[i] == 0) {                        
                         if (ordenados[i] != 0) {
@@ -51,18 +51,18 @@ namespace OrderlyList {
                 }
             }
 
-            var listanova = new List<Employee>();
+            var listaordenada = new List<Employee>();
 
             foreach (int Id in ordenados) {
-                listanova.Add(employees.First(x => x.Id == Id));
+                listaordenada.Add(employe.First(x => x.Id == Id));
             }
-            return listanova;
+            return listaordenada;
         }
 
         static void Printar(List<Employee> employees) {
 
-            foreach (Employee cada in employees) {
-                Console.WriteLine(cada);
+            foreach (Employee employee in employees) {
+                Console.WriteLine(employee);
             }
         }
     }
