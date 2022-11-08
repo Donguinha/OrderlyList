@@ -8,7 +8,7 @@ namespace OrderlyList {
     class Program {
 
         static void Main(string[] args) {
-           
+
             List<Employee> employees = ReceberDados();
             var employeesorder = Ordenar(employees);
             Printar(employeesorder);
@@ -37,16 +37,19 @@ namespace OrderlyList {
         static List<Employee> Ordenar(List<Employee> employe) {
 
             var ordenados = new int[employe.Count];
+            int x = 0;
 
             foreach (Employee cada in employe) {
-                for (int i = 0; i < ordenados.Length; i++) {
-                    if (cada.Id < ordenados[i] || ordenados[i] == 0) {                        
-                        if (ordenados[i] != 0) {
-                            ordenados[i + 1] = ordenados[i];
-                        }
+                ordenados[x] = cada.Id;
+                x++;
+            }
 
-                        ordenados[i] = cada.Id;
-                        break;
+            for (int i = 0; i < ordenados.Length - 1; i++) {
+                for (int j = 0; j < ordenados.Length - 1; j++) {
+                    if (ordenados[j] > ordenados[j + 1]) {
+                        int troca = ordenados[j];
+                        ordenados[j] = ordenados[j + 1];
+                        ordenados[j + 1] = troca;
                     }
                 }
             }
@@ -56,6 +59,7 @@ namespace OrderlyList {
             foreach (int Id in ordenados) {
                 listaordenada.Add(employe.First(x => x.Id == Id));
             }
+
             return listaordenada;
         }
 
